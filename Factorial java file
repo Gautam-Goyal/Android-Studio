@@ -1,0 +1,55 @@
+package com.example.factorial;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+    EditText number;
+    Button btn1;
+    TextView tv;
+    int num;
+    int factor;
+    int strfactor;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        number=(EditText)findViewById(R.id.number);
+        btn1=(Button)findViewById(R.id.btn1);
+        tv=(TextView)findViewById(R.id.tv);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String strnum;
+                strnum = number.getText().toString();
+                num = Integer.parseInt(strnum);
+                factorial(num);
+                if(factor<20||factor>0) {
+                    tv.setText("factorial: "+String.valueOf(factor));
+                }
+                else {
+                    ;
+                    tv.setText("please enter a number between 1-20");
+                }
+
+            }
+        });
+    }
+    private void factorial(int num) {
+        int i = 1;
+        factor = i;
+        while (i <= num) {
+            factor = factor * i;
+            i++;
+        }
+
+    }
+}
