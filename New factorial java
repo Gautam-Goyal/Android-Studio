@@ -1,0 +1,43 @@
+package com.example.factorial;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+    EditText number;
+    Button btn1;
+    TextView tv;
+    int num;
+    long factor;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        number = (EditText) findViewById(R.id.number);
+        btn1 = (Button) findViewById(R.id.btn1);
+        tv = (TextView) findViewById(R.id.tv);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int num = Integer.parseInt(number.getText().toString());
+
+                int i = 1;
+                factor = i;
+                while (i <= num) {
+                    factor = factor * i;
+                    i++;
+                    tv.setText("Factorial "+String.valueOf(factor));
+                }
+            }
+        });
+    }
+
+
+}
