@@ -1,0 +1,48 @@
+Please note that for the sake of simplicity I have made reference to only the first code snippet i.e.,
+
+┈┈┈┈┈┈┈┈┈┈┈┈```
+➡️// Create an anonymous implementation of OnClickListener
+private OnClickListener mCorkyListener = new OnClickListener() {
+    public void onClick(View v) {
+      // do something when the button is clicked
+    }
+};
+
+protected void onCreate(Bundle savedValues) {
+    ...
+    // Capture our button from layout
+    Button button = (Button)findViewById(R.id.corky);
+    // Register the onClick listener with the implementation above
+    button.setOnClickListener(mCorkyListener);
+    ...
+}
+```
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+setOnClickListener(View.OnClickListener l) is a public method of View class. Button class extends the View class and can therefore call setOnClickListener(View.OnClickListener l) method.
+
+setOnClickListener registers a callback to be invoked when the view (button in your case) is clicked. This answers should answer your first two questions:
+❓. Where does setOnClickListener fit in the above logic?
+
+Ans. It registers a callback when the button is clicked. (Explained in detail in the next paragraph).
+
+❓. Which one actually listens to the button click?
+
+Ans. setOnClickListener method is the one that actually listens to the button click.
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+When I say it registers a callback to be invoked, what I mean is it will run the View.OnClickListener l that is the input parameter for the method. In your case, it will be mCorkyListener mentioned in button.setOnClickListener(mCorkyListener); which will then execute the method onClick(View v) mentioned within
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+// Create an anonymous implementation of OnClickListener
+private OnClickListener mCorkyListener = new OnClickListener() {
+    public void onClick(View v) {
+      // do something when the button is clicked
+    }
+};
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+Moving on further, OnClickListener is an Interface definition for a callback to be invoked when a view (button in your case) is clicked. Simply saying, when you click that button, the methods within mCorkyListener (because it is an implementation of OnClickListener) are executed. But, OnClickListener has just one method which is OnClick(View v). Therefore, whatever action that needs to be performed on clicking the button must be coded within this method.
+
+Now that you know what setOnClickListener and OnClickListener mean, I'm sure you'll be able to differentiate between the two yourself. The third term View.OnClickListener is actually OnClickListener itself. The only reason you have View.preceding it is because of the difference in the import statment in the beginning of the program. If you have only import android.view.View; as the import statement you will have to use View.OnClickListener. If you mention either of these import statements: import android.view.View.*; or import android.view.View.OnClickListener; you can skip the View. and simply use OnClickListener.
+✔️✔️✔️
