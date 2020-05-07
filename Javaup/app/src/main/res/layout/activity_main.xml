@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/browna">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:text="@string/toppings"
+        android:id="@+id/topping"
+        style="@style/custom"
+        android:layout_below="@+id/name_enter"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/whip_check"
+        android:text="@string/whipcream"
+        android:textSize="16sp"
+        android:layout_below="@+id/topping"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="24dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chocolate_check"
+        android:text="@string/chocolate"
+        android:textSize="16sp"
+        android:layout_below="@+id/whip_check"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="24dp"/>
+
+    <TextView
+        style="@style/custom"
+        android:id="@+id/quan"
+        android:layout_below="@+id/chocolate_check"
+        android:text="@string/quantity"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="8dp"
+    android:layout_below="@+id/quan"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="48dp"
+        android:id="@+id/subtract"
+        android:layout_height="48dp"
+        android:layout_below="@+id/quantity_text_view"
+        android:layout_marginRight="8dp"
+        android:text="-"
+        android:onClick="decrement"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="1"
+        android:id="@+id/quantity_text_view"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:onClick="increment"/>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/order_summary_text_view"
+        android:text="@string/summary"
+        style="@style/custom"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_summary_text_view"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:text="$0.00"
+        android:id="@+id/price_text_view"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_dark"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_text_view"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/order"
+        android:onClick="submitOrder"/>
+
+
+
+</RelativeLayout>
+</ScrollView>

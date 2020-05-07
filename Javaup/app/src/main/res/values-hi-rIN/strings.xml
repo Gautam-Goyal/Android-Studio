@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Java up</string>
+    <string name="price" translatable="false">कीमत</string>
+    <string name="addchoc">" चॉकलेट डालें"</string>
+    <string name="addwhip">फिंटी हुई मलाई डालें</string>
+    <string name="name">" नाम"</string>
+    <string name="thank">" धन्यवाद!"</string>
+    <string name="summary">आदेश सारांश</string>
+    <string name="quantity">मात्रा</string>
+    <string name="chocolate">चॉकलेट</string>
+    <string name="whipcream">फिंटी हुई मलाई</string>
+    <string name="toppings">टॉपिंग</string>
+    <string name="order">गण</string>
+    <string name="whipcreamadd">फिंटी हुई मलाई के लिए $ 1 का शुल्क</string>
+    <string name="whipcreamr">फिंटी हुई मलाई निकाल दी गयी है</string>
+    <string name="chocadd">चॉकलेट के लिए $2 का शुल्क</string>
+    <string name="chocre">चॉकलेट निकाल दी गयी है</string>
+    <string name="undo">नष्ट करदो</string>
+</resources>

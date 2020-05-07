@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Java up</string>
+    <string name="toppings">Toppings</string>
+    <string name="whipcream">Whip Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">Quantity</string>
+    <string name="summary">Order Summary</string>
+    <string name="name">Name</string>
+    <string name="addwhip">Add Whip Cream</string>
+    <string name="addchoc">Add Chocolate</string>
+    <string name="price">Price</string>
+    <string name="thank">Thank You!</string>
+    <string name="order">Order</string>
+    <string name="whipcreamadd">$1 charged for Whip Cream</string>
+    <string name="whipcreamr">Whip Cream Removed</string>
+    <string name="chocadd">$2 charged for Chocolate</string>
+    <string name="chocre">Chocolate Removed</string>
+    <string name="undo">UNDO</string>
+</resources>
