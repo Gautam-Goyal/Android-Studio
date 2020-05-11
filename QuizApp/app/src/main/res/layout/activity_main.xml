@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bjbj">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="221dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:src="@drawable/sss" />
+
+        <LinearLayout
+            android:id="@+id/question_1_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_1"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mjolnir" />
+
+            <RadioGroup
+                android:id="@+id/question_1_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_1_first_logo_radio"
+                    android:text="Star"
+                    style="@style/question_radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/question_1_second_logo_radio"
+                    android:text="Asteroid"
+                    style="@style/question_radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/question_1_third_logo_radio"
+                    android:text="Constellation"
+                    style="@style/question_radio_button_style"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_2_container"
+            style="@style/question_container_style">
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_2"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/reality" />
+
+            <RadioGroup
+                android:id="@+id/question_2_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_2_first_logo_radio"
+                    android:text="Guardians Of the Galaxy"
+                    style="@style/question_radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/question_2_second_logo_radio"
+                    android:text="Thor:The Dark World"
+                    style="@style/question_radio_button_style"
+                    />
+
+                <RadioButton
+                    android:id="@+id/question_2_third_logo_radio"
+                    android:text="The Avengers"
+                    style="@style/question_radio_button_style"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_3_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_3"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/howard" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                        android:id="@+id/question_3_first_checkbox"
+                        android:text="Captain America:The First Avenger"
+                        style="@style/question_checkbox_style" />
+
+
+                <CheckBox
+                        android:id="@+id/question_3_second_checkbox"
+                        android:text="Avengers Endgame"
+                        style="@style/question_checkbox_style" />
+
+                <CheckBox
+                        android:id="@+id/question_3_third_checkbox"
+                        android:text="Iron Man 1"
+                        style="@style/question_checkbox_style"
+                        />
+
+                <CheckBox
+                    android:id="@+id/question_3_fourth_checkbox"
+                    android:text="Captain America:Civil War"
+                    style="@style/question_checkbox_style"
+                    />
+
+                <CheckBox
+                    android:id="@+id/question_3_fifth_checkbox"
+                    android:text="Ant Man 1"
+                    style="@style/question_checkbox_style"
+                    />
+
+                <CheckBox
+                    android:id="@+id/question_3_sixth_checkbox"
+                    android:text="The Avengers"
+                    style="@style/question_checkbox_style"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_4_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_4"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/asgard" />
+
+            <EditText
+                android:id="@+id/question_4_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/colorAccent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/question_5_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_5"/>
+
+            <RadioGroup
+                android:id="@+id/question_5_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_5_first_radio"
+                    android:text="Black Widow"
+                    style="@style/question_radio_button_style"
+                    />
+
+                <RadioButton
+                    android:id="@+id/question_5_second_radio"
+                    android:text="Iron Man"
+                    style="@style/question_radio_button_style"
+                    />
+
+                <RadioButton
+                    android:id="@+id/question_5_third_radio"
+                    android:text="Captain America"
+                    style="@style/question_radio_button_style"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_6_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_6"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/space" />
+
+            <RadioGroup
+                android:id="@+id/question_6_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_6_first_radio"
+                    android:text="29"
+                    style="@style/question_radio_button_style"
+                    />
+
+                <RadioButton
+                    android:id="@+id/question_6_second_radio"
+                    android:text="20"
+                    style="@style/question_radio_button_style"
+                    />
+
+                <RadioButton
+                    android:id="@+id/question_6_third_radio"
+                    android:text="26"
+                    style="@style/question_radio_button_style"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_7_container"
+            style="@style/question_container_style">
+
+            <TextView
+                style="@style/question_style"
+                android:text="@string/question_7"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back" />
+
+            <EditText
+                android:id="@+id/question_7_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/colorAccent"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="checkQuiz"/>
+    </LinearLayout>
+</ScrollView>

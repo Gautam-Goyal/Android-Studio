@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="question_1">1. Thor\'s hammer MJÖLNIR is made of metal from the heart of dying what?</string>
+    <string name="question_2">2. Which MCU film primarily focused on the Reality stone?</string>
+    <string name="question_3">3. Check all the movies in which Howard Stark has made appearance?</string>
+    <string name="question_4">4. Where did Thor settle down with the rest of the Asgardians after the initial snap?</string>
+    <string name="question_5">5. The Maximoff twins, Wanda and Pietro, are introduced in this movie as antagonists. Who is the first Avenger to tangle with Wanda Maximoff (Scarlet Witch)?</string>
+    <string name="question_6">6. For how many days tony and nebula stranded in space?</string>
+    <string name="question_7">7. What State Do Tony &amp; Cap Travel Back To In 1970?</string>
+</resources>
